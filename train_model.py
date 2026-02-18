@@ -7,7 +7,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.ensemble import HistGradientBoostingRegressor
 
 # 1️⃣ Cargar CSV
-df = pd.read_csv("data/horsetrust_database_index.csv")
+df = pd.read_csv("data/horsetrust_database_index.csv", index_col=0)
 
 # 2️⃣ Features y target
 DROP = [
